@@ -1,6 +1,7 @@
 
 #import "CDVHelloFrameWorld.h"
 #import <Cordova/CDV.h>
+#import "HelloFrameworkWorld/InsertManager.h"
 
 @implementation CDVHelloFrameWorld
 
