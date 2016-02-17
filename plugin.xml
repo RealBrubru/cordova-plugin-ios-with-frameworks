@@ -26,6 +26,6 @@
         <source-file src="src/ios/CDVHelloFrameWorld.m" />
 
         <framework src="MobileCoreServices.framework" />
-        <framework srd="src/ios/Frameworks/HelloFrameworkWorld.framework" custom="true" />
+        <framework src="src/ios/Frameworks/HelloFrameworkWorld.framework" custom="true" />
     </platform>
 </plugin>
