@@ -7,7 +7,9 @@
 
 - (void) resize:(CDVInvokedUrlCommand*)command
 {
-    NSLog(@"CDVHelloFrameWorld AAAAAAAHHH");
+    NSLog(@"CDVHelloFrameWorld AAAAHAHAHAHAHAHAHAAAAHHH");
+
+    [[InsertManager sharedManager] startManager];
 }
 
 @end
