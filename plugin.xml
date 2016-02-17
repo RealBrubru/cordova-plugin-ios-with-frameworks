@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-ios-with-frameworks"
+    version="0.0.1">
+    <name>IOS Plugin with Frameworks</name>
+    <description>Cordova IOS plugin with frameworks</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,ios,plugin,frameworks</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/HelloFrameWorld.js" name="HelloFrameWorld">
+        <clobbers target="HelloFrameWorld" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="HelloFrameWorld">
+                <param name="ios-package" value="CDVHelloFrameWorld" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVHelloFrameWorld.h" />
+        <source-file src="src/ios/CDVHelloFrameWorld.m" />
+
+        <framework src="MobileCoreServices.framework" />
+    </platform>
+</plugin>
